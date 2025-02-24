@@ -1,6 +1,7 @@
 
 let col = [1,2,3,4,5,6]
 let combos=[]
+let dumbCombos = []
 let firstGuess = [1, 1, 2, 2]
 let nextGuess = []
 let simGuesses = []
@@ -9,13 +10,15 @@ let averageCalc = 0
 let simGuess = []
 let simAnswer = []
 let minIndex = 0
-
+let dum
 
 for(let x of col){
     for(let y of col){
         for(let z of col) {
             for(let h of col) {
                 combos.push([x, y, z, h])
+                dumbCombos.push([x, y, z, h])
+    
 
             }
         }
@@ -27,6 +30,7 @@ for(let x of col){
 
 
 let guesses = []; 
+let dumbGuesses = []
 
 
 function eliminate(num1, num2, num3, num4, black, white) {
@@ -187,6 +191,19 @@ nextGuess = nextGuess[minIndex]
 
     return average; 
    
+}
+
+
+
+
+
+
+
+
+
+function dumbEliminate (){
+    
+
 }
 
 
