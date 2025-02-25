@@ -1,9 +1,9 @@
 .btn {
  color: rebeccapurple;
- background-color: gainsboro;
+background-color: gainsboro;
  font-family: 'Lucida Sans','Arial';
  border-style: dashed;
- border-color: aquamarine;
+ border-color: rebeccapurple;
  font-size: 15px;
  border-radius: 10px;
  padding-top: 17px;
@@ -12,7 +12,27 @@
  padding-bottom: 17px; 
 }
 
-.warning{
+.warning {
     color: rebeccapurple;
+    font-family: 'Lucida Sans', "Arial";
+}
+
+.wooper {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.box {
+    width: 300px;
+    display: block;
+    margin-left: auto;   
+    margin-right: auto;
+    width: 50%;
 }
  
+  textarea{
+    resize: none;
+  } 

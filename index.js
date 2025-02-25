@@ -1,7 +1,6 @@
 
 let col = [1,2,3,4,5,6]
 let combos=[]
-let dumbCombos = []
 let firstGuess = [1, 1, 2, 2]
 let nextGuess = []
 let simGuesses = []
@@ -10,43 +9,48 @@ let averageCalc = 0
 let simGuess = []
 let simAnswer = []
 let minIndex = 0
-let dum
+let findBlack = $0
+let black = 0
+
 
 for(let x of col){
     for(let y of col){
         for(let z of col) {
             for(let h of col) {
                 combos.push([x, y, z, h])
-                dumbCombos.push([x, y, z, h])
+               
     
 
             }
         }
     }
-}
+} 
+console.log(combos.length)
+
+// List all possible combinations
 
 
 
 
 
 let guesses = []; 
-let dumbGuesses = []
+
 
 
 function eliminate(num1, num2, num3, num4, black, white) {
      let guess = [num1, num2, num3, num4]
     combos = combos.filter(subArray => {
-        let blackCount = 0
+        let blackCount = 0 
         let whiteCount = 0
         let guessCopy = [...guess]
         let subArrayCopy = [...subArray]
         
-        for(let i = 0; i<4; i++) {
+        for(let i = 0; i<4; i++) { 
             if(subArrayCopy[i] == guessCopy[i]) {
                 blackCount++
                 guessCopy[i] = null
                 subArrayCopy[i] = null
-            }
+            }   // get black pegs
         }
          for(let i = 0; i<4; i++) {
             if(guessCopy[i] !== null && subArrayCopy.includes(guessCopy[i])) {
@@ -54,12 +58,12 @@ function eliminate(num1, num2, num3, num4, black, white) {
                 subArrayCopy[subArrayCopy.indexOf(guessCopy[i])] = null
                 guessCopy[i] = null
             }
-         }
-         return blackCount === black && whiteCount === white
+         } // get white pegs
+         return blackCount === black && whiteCount === white //Keep ones that match feedback
         
        
     })
-     combos = combos.filter(subArray => !guesses.some(guess => JSON.stringify(guess) === JSON.strinify(subArray)))
+     combos = combos.filter(subArray => !guesses.some(guess => JSON.stringify(guess) === JSON.strinify(subArray))) //eliminate first guess
          
          return combos
         
@@ -145,7 +149,7 @@ function findGuess() {
                     simGuessCopy[j] = null;  
                     simAnswerCopy[j] = null;  
                 }
-            }
+            } // Get black pegs for every possibility
 
           
             for (let j = 0; j < 4; j++) {
@@ -155,10 +159,10 @@ function findGuess() {
                     simAnswerCopy[simAnswerCopy.indexOf(simGuessCopy[j])] = null;
                     simGuessCopy[j] = null;
                 }
-            }
+            } // Get white pegs for every possibility
 
           
-            simEliminate(simGuess[0], simGuess[1], simGuess[2], simGuess[3], simBlack, simWhite);
+            simEliminate(simGuess[0], simGuess[1], simGuess[2], simGuess[3], simBlack, simWhite) // Find remaining possibilities
            
            
             averageCalc += simCombos.length;
@@ -169,10 +173,10 @@ function findGuess() {
         }
 
        
-        average.push(averageCalc / combos.length);
+        average.push(averageCalc / combos.length); // Get average of possibilites
         
        
-        averageCalc = 0;
+        averageCalc = 0 // Reset average
      
 
 
@@ -184,9 +188,9 @@ minIndex = i;
 
 
  }
-}
+} // Determine lowest average
 
-nextGuess = nextGuess[minIndex]
+nextGuess = nextGuess[minIndex] // Make lowest average next guess
 
 
     return average; 
@@ -201,10 +205,7 @@ nextGuess = nextGuess[minIndex]
 
 
 
-function dumbEliminate (){
-    
 
-}
 
 
 eliminate(1, 1, 2, 2, 0, 0)
