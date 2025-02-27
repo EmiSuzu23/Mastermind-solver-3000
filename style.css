@@ -39,3 +39,27 @@
   textarea{
     resize: none;
   } 
+
+  .circle{
+    width:75px;
+    border-radius: 50%;
+    font-size:55px;
+  }
+  #orange{
+    background-color: chocolate;
+  }
+ #blue{
+  background-color: #318CE7;
+ }
+ #yellow{
+  background-color: yellow;
+ }
+ #purple{
+  background-color: #D8BFD8;
+ }
+ #red{
+  background-color: #D2122E;
+ }
+ #black{
+  background-color:gray;
+ }
