@@ -10,40 +10,37 @@
     <h1 class="warning">MASTERMIND SOLVER 3000-WOOPER EDITION</h1>
     <h2 class="warning">Rules</h2>
     <p class="warning">I try to guess the combination of the colors with 6 different colors, if I guess it right I win!</p>
-    <img class="wooper" src="happy-removebg-preview.png" alt="wooper">
     <div id="GuessingArea">
+      <img class="wooper" src="happy-removebg-preview.png" alt="wooper">
     <button class="btn"> WOOPER GUESSES </button>
     <button class="btn"> SUBMIT </button>
     <button class="btn"> RESET </button>
+   <div class="BlackWhite">
+    <!----where you type which ones are right and wrong-->
     <h1> black: </h1>
-    <input id="text" rows="1" cols="3">
-      
+    <input type="number" min="0" max="4" id="text" rows="1" cols="3">
     </input>
      <h1> white: </h1>
-      <input id="text"  rows="1" cols="3">
-
+      <input id="text" type="number" min="0" max="4" rows="1" cols="3">
      </input>
+    </div> 
+    <!---colors (maybe we need to change how we make the circles)-->
      <div id="colors">
-      <svg class="dots" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-        <circle r="20" cx="30" cy="50" fill="yellow" />
-      </svg>
-      <svg class="dots" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-        <circle r="20" cx="30" cy="50" fill="red" />
-      </svg>
-      <svg class="dots" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-        <circle r="20" cx="30" cy="50" fill="blue" />
-      </svg>
-      <svg class="dots" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-        <circle r="20" cx="30" cy="50" fill="purple" />
-      </svg>
-      <svg class="dots" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-        <circle r="20" cx="30" cy="50" fill="black"/>
-        </svg>
-      <svg class="dots" height="100" width="100" xmlns="http://www.w3.org/2000/svg">
-        <circle r="20" cx="30" cy="50" fill="green" />
+      <button class="circle">Y</button>
+      <button class="circle">B</button>
+      <button class="circle">R</button>
+      <button class="circle">P</button>
+      <button class="circle">O</button>
+      <button class="circle">B</button>
       </svg>
     </div>
-    <img class="box" src="guessing_part (1).png" alt="guessing box">
+    <!---possible changes we might need to make-->
+    <img  class="box" src="guessing area .png" alt="guessing box">
+    <img  class="box"src="guessing area .png" alt="guessing box">
+    <img class="box"src="guessing area2.png" alt="guessing box">
+   
+
+ ]
   </div>
   
     

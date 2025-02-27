@@ -1,6 +1,7 @@
+
 .btn {
  color: rebeccapurple;
-background-color: gainsboro;
+ background-color: gainsboro;
  font-family: 'Lucida Sans','Arial';
  border-style: dashed;
  border-color: rebeccapurple;
@@ -25,12 +26,14 @@ background-color: gainsboro;
     width: 50%;
 }
 
+
 .box {
     width: 300px;
     display: block;
     margin-left: auto;   
     margin-right: auto;
     width: 50%;
+    
 }
  
   textarea{
