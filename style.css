@@ -19,11 +19,11 @@
 }
 
 .wooper {
-    width: 200px;
+    width: 190px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+   
 }
 
 
@@ -63,3 +63,66 @@
  #black{
   background-color:gray;
  }
+
+ .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 1%;
+} 
+#dot11{
+  background-color: blue; 
+}
+.line1{
+  display: flex; 
+  justify-content: space-evenly ; 
+  
+}
+.line2{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line3{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line4{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line5{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line6{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line7{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line8{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line9{ 
+  display: flex; 
+  justify-content: space-evenly ; 
+}
+
+.line10{
+  display: flex; 
+  justify-content: space-evenly ; 
+}
