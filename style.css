@@ -2,7 +2,7 @@
 .btn {
  color: rebeccapurple;
  background-color: gainsboro;
- font-family: 'Lucida Sans','Arial';
+ font-family: Georgia, serif;;
  border-style: dashed;
  border-color: rebeccapurple;
  font-size: 15px;
@@ -12,10 +12,12 @@
  padding-left: 20px;
  padding-bottom: 17px; 
 }
-
+body {
+  background-color: lightblue;
+}
 .warning {
     color: rebeccapurple;
-    font-family: 'Lucida Sans', "Arial";
+    font-family: Georgia, serif;
 }
 
 .wooper {
@@ -55,7 +57,7 @@
   background-color: yellow;
  }
  #purple{
-  background-color: #D8BFD8;
+  background-color: #CBC3E3;
  }
  #red{
   background-color: #D2122E;
@@ -73,10 +75,9 @@
   width: 50px;
   height: 50px;
   margin: 1%;
+  visibility: hidden;
 } 
-#dot11{
-  background-color: blue; 
-}
+
 .line1{
   display: flex; 
   justify-content: space-evenly ; 
@@ -125,4 +126,47 @@
 .line10{
   display: flex; 
   justify-content: space-evenly ; 
+}
+.yellow{
+ visibility: visible;
+ background-color: yellow;
+ border-radius: 50%;
+ height:  50px; 
+ width: 50px; 
+}
+.blue{
+ visibility: visible;
+ background-color: blue;
+ border-radius: 50%;
+ height:  50px; 
+ width: 50px; 
+
+}
+.red {
+  visibility: visible;
+  background-color: #D2122E;
+  border-radius: 50%;
+ height:  50px; 
+ width: 50px; 
+}
+.purple{
+ visibility: visible;
+background-color: #CBC3E3;
+ border-radius: 50%;
+ height:  50px; 
+ width: 50px; 
+}
+.orange{
+ visibility: visible;
+ background-color: chocolate; 
+ border-radius: 50%;
+ height:  50px; 
+ width: 50px; 
+}
+.black{
+ visibility: visible;
+ background-color: gray;
+ border-radius: 50%;
+ height:  50px; 
+ width: 50px; 
 }

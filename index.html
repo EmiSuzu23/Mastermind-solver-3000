@@ -12,9 +12,9 @@
     <p class="warning">I try to guess the combination of the colors with 6 different colors, if I guess it right I win!</p>
     <div id="GuessingArea">
       <img class="wooper" src="happy-removebg-preview.png" alt="wooper">
-    <button class="btn"> WOOPER GUESSES </button>
-    <button class="btn"> SUBMIT </button>
-    <button class="btn"> RESET </button>
+    <button class="btn" onclick="woopGuess()"  > WOOPER GUESSES </button>
+    <button class="btn" onclick="submit()"> SUBMIT </button>
+    <button class="btn" onclick="reset()" > RESET </button>
    <div class="BlackWhite">
     <!----where you type which ones are right and wrong-->
     <h1> black: </h1>
@@ -36,66 +36,66 @@
     </div>
     <!---possible changes we might need to make-->
     <!---Dots but each one has id do whatever you want on here y'all-->
-  <!-- <div class="line1">
-    <span class="dot" id="dot11"></span>
-    <span class="dot" id="dot12"></span>
-    <span class="dot" id="dot13"></span>
-    <span class="dot" id="dot14"></span>
+  <div class="line1">
+    <span class="dot" id="dot1.1"></span>
+    <span class="dot" id="dot1.2"></span>
+    <span class="dot" id="dot1.3"></span>
+    <span class="dot" id="dot1.4"></span>
     </div>
   <div class="line2">
-      <span class="dot" id="dot21"></span>
-      <span class="dot" id="dot22"></span>
-      <span class="dot" id="dot23"></span>
-      <span class="dot" id="dot24"></span>
+      <span class="dot" id="dot2.1"></span>
+      <span class="dot" id="dot2.2"></span>
+      <span class="dot" id="dot2.3"></span>
+      <span class="dot" id="dot2.4"></span>
     </div>
    <div class="line3">
-      <span class="dot" id="dot31"></span>
-      <span class="dot" id="dot32"></span>
-      <span class="dot" id="dot33"></span>
-      <span class="dot" id="dot34"></span>
+      <span class="dot" id="dot3.1"></span>
+      <span class="dot" id="dot3.2"></span>
+      <span class="dot" id="dot3.3"></span>
+      <span class="dot" id="dot3.4"></span>
    </div>
    <div class="line4">
-      <span class="dot" id="dot41"></span>
-      <span class="dot" id="dot42"></span>
-      <span class="dot" id="dot43"></span>
-      <span class="dot" id="dot44"></span>
+      <span class="dot" id="dot4.1"></span>
+      <span class="dot" id="dot4.2"></span>
+      <span class="dot" id="dot4.3"></span>
+      <span class="dot" id="dot4.4"></span>
     </div>
     <div class="line5">
-      <span class="dot" id="dot51"></span>
-      <span class="dot" id="dot52"></span>
-      <span class="dot" id="dot53"></span>
-      <span class="dot" id="dot54"></span>
+      <span class="dot" id="dot5.1"></span>
+      <span class="dot" id="dot5.2"></span>
+      <span class="dot" id="dot5.3"></span>
+      <span class="dot" id="dot5.4"></span>
     </div>
     <div class="line6">
-      <span class="dot" id="dot61"></span>
-      <span class="dot" id="dot62"></span>
-      <span class="dot" id="dot63"></span>
-      <span class="dot" id="dot64"></span>
+      <span class="dot" id="dot6.1"></span>
+      <span class="dot" id="dot6.2"></span>
+      <span class="dot" id="dot6.3"></span>
+      <span class="dot" id="dot6.4"></span>
     </div>
     
     <div class="line7">
-      <span class="dot" id="dot71"></span>
-      <span class="dot" id="dot72"></span>
-      <span class="dot" id="dot73"></span>
-      <span class="dot" id="dot74"></span>
+      <span class="dot" id="dot7.1"></span>
+      <span class="dot" id="dot7.2"></span>
+      <span class="dot" id="dot7.3"></span>
+      <span class="dot" id="dot7.4"></span>
     </div>
     <div class="line8">
-      <span class="dot" id="dot81"></span>
-      <span class="dot" id="dot82"></span>
-      <span class="dot" id="dot83"></span>
-      <span class="dot" id="dot84"></span>
+      <span class="dot" id="dot8.1"></span>
+      <span class="dot" id="dot8.2"></span>
+      <span class="dot" id="dot8.3"></span>
+      <span class="dot" id="dot8.4"></span>
     </div>
     <div class="line9">
-      <span class="dot" id="dot91"></span>
-      <span class="dot" id="dot92"></span>
-      <span class="dot" id="dot93"></span>
-      <span class="dot" id="dot94"></span>
+      <span class="dot" id="dot9.1"></span>
+      <span class="dot" id="dot9.2"></span>
+      <span class="dot" id="dot9.3"></span>
+      <span class="dot" id="dot9.4"></span>
     </div>
      <div class="line10">
-      <span class="dot" id="dot101"></span>
-      <span class="dot" id="dot102"></span>
-      <span class="dot" id="dot103"></span>
-      <span class="dot" id="dot104"></span>
+      <span class="dot" id="dot10.1"></span>
+      <span class="dot" id="dot10.2"></span>
+      <span class="dot" id="dot10.3"></span>
+      <span class="dot" id="dot10.4"></span>
      </div>
  
  </div>

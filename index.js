@@ -1,5 +1,5 @@
 
-let col = [1,2,3,4,5,6]
+let col = ["yellow", "blue", "red", "purple", "orange", "black"]
 let combos=[]
 let firstGuess = [1, 1, 2, 2]
 let nextGuess = []
@@ -9,8 +9,10 @@ let averageCalc = 0
 let simGuess = []
 let simAnswer = []
 let minIndex = 0
-let findBlack = $0
+
 let black = 0
+let white = 0 
+let guessCount = 0
 
 
 for(let x of col){
@@ -198,22 +200,29 @@ nextGuess = nextGuess[minIndex] // Make lowest average next guess
 }
 
 
+function woopGuess() {
+    guessCount+=1
+    if (guessCount > 1) {
+        eliminate(nextGuess[0], nextGuess[1], nextGuess[2], nextGuess[3], black, white)
+        findGuess()
+    }
+
+    for(let i = 1; i < 5; i++) {
+        document.getElementById("dot" + guessCount + "." + i).className = nextGuess[i-1]
+
+        
+    }
+
+    console.log("hi")
+
+
+
+}
 
 
 
 
 
-
-
-
-
-
-eliminate(1, 1, 2, 2, 0, 0)
-let simCombos = [...combos]
-findGuess()
-
-
-console.log(nextGuess)
 
 
 
