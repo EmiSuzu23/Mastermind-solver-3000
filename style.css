@@ -142,30 +142,30 @@ body {
  width: 50px; 
 
 }
-.red {
+.orange {
   visibility: visible;
-  background-color: #D2122E;
+  background-color: chocolate;
   border-radius: 50%;
  height:  50px; 
  width: 50px; 
 }
-.purple{
+.brown{
  visibility: visible;
-background-color: #CBC3E3;
+background-color: #7B3F00;
  border-radius: 50%;
  height:  50px; 
- width: 50px; 
+ width: 50px;  
 }
-.orange{
+.green{
  visibility: visible;
- background-color: chocolate; 
+ background-color: green; 
  border-radius: 50%;
  height:  50px; 
  width: 50px; 
 }
 .black{
  visibility: visible;
- background-color: gray;
+ background-color: black;
  border-radius: 50%;
  height:  50px; 
  width: 50px; 
