@@ -244,6 +244,11 @@ function woopGuess() {
 }
 
 
+function reset() {
+    location.reload();
+}
+
+
 
 
 
