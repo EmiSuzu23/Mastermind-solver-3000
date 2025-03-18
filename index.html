@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="warning">MASTERMIND SOLVER 3000-WOOPER EDITION</h1>
-    <h2 class="warning">Rules</h2>
-    <p class="warning">I try to guess the combination of the colors with 6 different colors, if I guess it right I win!</p>
+    <h1 class="description">MASTERMIND SOLVER 3000-WOOPER EDITION</h1>
+    <h2 class="description">Rules</h2>
+    <p class="description">I try to guess the combination of the colors with 6 different colors, if I guess it right I win!</p>
     <div id="GuessingArea">
       <img class="wooper" src="happy-removebg-preview.png" alt="wooper">
     <button class="btn" onclick="woopGuess()"  > WOOPER GUESSES </button>
@@ -29,14 +29,15 @@
       <button class="circle" id="yellow">Y</button>
       <button class="circle" id="blue">B</button>
       <button class="circle" id="red">R</button>
-      <button class="circle" id="purple">P</button>
+      <button class="circle" id="purple">B</button>
       <button class="circle" id="orange">O</button>
       <button class="circle" id="black">B</button>
       </svg>
     </div>
     <!---possible changes we might need to make-->
     <!---Dots but each one has id do whatever you want on here y'all-->
-  <div class="line1">
+  <h1 class="nosolutions" id="end"> no possible solutions </h1>
+    <div class="line1">
     <span class="dot" id="dot1.1"></span>
     <span class="dot" id="dot1.2"></span>
     <span class="dot" id="dot1.3"></span>

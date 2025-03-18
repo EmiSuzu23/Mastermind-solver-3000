@@ -15,7 +15,7 @@
 body {
   background-color: lightblue;
 }
-.warning {
+.description{
     color: rebeccapurple;
     font-family: Georgia, serif;
 }
@@ -57,10 +57,10 @@ body {
   background-color: yellow;
  }
  #purple{
-  background-color: #CBC3E3;
+  background-color: #7B3F00;
  }
  #red{
-  background-color: #D2122E;
+  background-color: green;
  }
  #black{
   background-color:gray;
@@ -169,4 +169,13 @@ background-color: #7B3F00;
  border-radius: 50%;
  height:  50px; 
  width: 50px; 
+}
+
+.nosolutions {
+  visibility: hidden;
+
+}
+
+.noSolution {
+  visibility: visible;
 }

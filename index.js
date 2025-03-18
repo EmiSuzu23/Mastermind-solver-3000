@@ -69,7 +69,12 @@ function eliminate(num1, num2, num3, num4, black, white) {
      combos = combos.filter(subArray => !guesses.some(guess => JSON.stringify(guess) === JSON.strinify(subArray))) //eliminate first guess
          
          return combos
-        
+
+
+         
+        if(combos.length = 0) {
+            document.getElementById("end").className = "noSolution"
+        }
     
 }
 
@@ -219,7 +224,10 @@ function woopGuess() {
         eliminate(nextGuess[0], nextGuess[1], nextGuess[2], nextGuess[3], black, white)
         findGuess()
         console.log(nextGuess)
+        
     }
+
+    
 
     for(let i = 1; i < 5; i++) {
         document.getElementById("dot" + guessCount + "." + i).className = nextGuess[i-1]
@@ -229,7 +237,7 @@ function woopGuess() {
         
     }
 
-    console.log("hi")
+    
 
 
 
