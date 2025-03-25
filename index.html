@@ -2,104 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Mastermind Solver 3000</title>
+    <title>Start</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <h1 class="description">MASTERMIND SOLVER 3000-WOOPER EDITION</h1>
-    <h2 class="description">Rules</h2>
-    <p class="description">I try to guess the combination of the colors with 6 different colors, if I guess it right I win!</p>
-    <div id="GuessingArea">
-      <img class="wooper" src="happy-removebg-preview.png" alt="wooper">
-    <button class="btn" onclick="woopGuess()"  > WOOPER GUESSES </button>
-    <button class="btn" onclick="reset()" > RESET </button>
-   <div class="BlackWhite">
-    <!----where you type which ones are right and wrong-->
-    <h1> black: </h1>
-    <input placeholder="Black"  type="number" min="0" max="4" id="text" rows="1" cols="3">
-    </input>
-     <h1> white: </h1>
-      <input placeholder="White" id="text" type="number" min="0" max="4" rows="1" cols="3">
-     </input>
-    </div> 
-    <!---colors (maybe we need to change how we make the circles)-->
-     <div id="colors">
-      <button class="circle" id="yellow">Y</button>
-      <button class="circle" id="blue">B</button>
-      <button class="circle" id="red">G</button>
-      <button class="circle" id="purple">B</button>
-      <button class="circle" id="orange">O</button>
-      <button class="circle" id="black">B</button>
-      </svg>
-    </div>
-    <!---possible changes we might need to make-->
-    <!---Dots but each one has id do whatever you want on here y'all-->
-  <h1 class="nosolutions" id="end"> No possible solutions </h1>
-    <div class="line1">
-    <span class="dot" id="dot1.1"></span>
-    <span class="dot" id="dot1.2"></span>
-    <span class="dot" id="dot1.3"></span>
-    <span class="dot" id="dot1.4"></span>
-    </div>
-  <div class="line2">
-      <span class="dot" id="dot2.1"></span>
-      <span class="dot" id="dot2.2"></span>
-      <span class="dot" id="dot2.3"></span>
-      <span class="dot" id="dot2.4"></span>
-    </div>
-   <div class="line3">
-      <span class="dot" id="dot3.1"></span>
-      <span class="dot" id="dot3.2"></span>
-      <span class="dot" id="dot3.3"></span>
-      <span class="dot" id="dot3.4"></span>
-   </div>
-   <div class="line4">
-      <span class="dot" id="dot4.1"></span>
-      <span class="dot" id="dot4.2"></span>
-      <span class="dot" id="dot4.3"></span>
-      <span class="dot" id="dot4.4"></span>
-    </div>
-    <div class="line5">
-      <span class="dot" id="dot5.1"></span>
-      <span class="dot" id="dot5.2"></span>
-      <span class="dot" id="dot5.3"></span>
-      <span class="dot" id="dot5.4"></span>
-    </div>
-    <div class="line6">
-      <span class="dot" id="dot6.1"></span>
-      <span class="dot" id="dot6.2"></span>
-      <span class="dot" id="dot6.3"></span>
-      <span class="dot" id="dot6.4"></span>
-    </div>
-    
-    <div class="line7">
-      <span class="dot" id="dot7.1"></span>
-      <span class="dot" id="dot7.2"></span>
-      <span class="dot" id="dot7.3"></span>
-      <span class="dot" id="dot7.4"></span>
-    </div>
-    <div class="line8">
-      <span class="dot" id="dot8.1"></span>
-      <span class="dot" id="dot8.2"></span>
-      <span class="dot" id="dot8.3"></span>
-      <span class="dot" id="dot8.4"></span>
-    </div>
-    <div class="line9">
-      <span class="dot" id="dot9.1"></span>
-      <span class="dot" id="dot9.2"></span>
-      <span class="dot" id="dot9.3"></span>
-      <span class="dot" id="dot9.4"></span>
-    </div>
-     <div class="line10">
-      <span class="dot" id="dot10.1"></span>
-      <span class="dot" id="dot10.2"></span>
-      <span class="dot" id="dot10.3"></span>
-      <span class="dot" id="dot10.4"></span>
-     </div>
- 
- </div>
-  
-    
+  <body> 
+    <h1> Start </h1>
+    <h3> Choose Colors </h3>
+    <p> Colors Available: Yellow, Blue, Orange, Brown, Green, Black, Red, White, Grey, Pink, Purple </p>
+    <input id = "inputColor" placeholder="yellow, blue, orange, brown, green, black"> </input>
+    <a href="emisuzu23.github.io/Mastermind-solver-3000/index.html" onclick = "getColor()"> 
   </body>
-</html>

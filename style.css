@@ -171,6 +171,45 @@ background-color: #7B3F00;
  width: 50px; 
 }
 
+.red{
+  visibility: visible;
+  background-color: black;
+  border-radius: 50%;
+  height:  50px; 
+  width: 50px; 
+ }
+ .white{
+  visibility: visible;
+  background-color: white;
+  border-radius: 50%;
+  height:  50px; 
+  width: 50px; 
+ }
+
+ .grey{
+  visibility: visible;
+  background-color: grey;
+  border-radius: 50%;
+  height:  50px; 
+  width: 50px; 
+ }
+
+ .pink{
+  visibility: visible;
+  background-color: pink;
+  border-radius: 50%;
+  height:  50px; 
+  width: 50px; 
+ }
+ .purple{
+  visibility: visible;
+  background-color: black;
+  border-radius: 50%;
+  height:  50px; 
+  width: 50px; 
+ }
+
+
 .nosolutions {
   visibility: hidden;
 
