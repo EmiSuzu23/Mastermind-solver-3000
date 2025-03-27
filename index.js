@@ -20,23 +20,29 @@ function getColor() {
     let colors = getColor.split(',').map(num => num.trim())
     col = col.concat(colors)
     nextGuess = [col[0], col[0], col[1], col[1]]
+    
+    for(let x of col){
+        for(let y of col){
+            for(let z of col) {
+                for(let h of col) {
+                    combos.push([x, y, z, h])
+                   
+        
+    
+                }
+            }
+        }
+    } 
+    console.log(combos.length)
+    console.log(col)
+    console.log("hi")
 
 }
 
  
-for(let x of col){
-    for(let y of col){
-        for(let z of col) {
-            for(let h of col) {
-                combos.push([x, y, z, h])
-               
-    
 
-            }
-        }
-    }
-} 
-console.log(combos.length)
+
+
 
 // List all possible combinations
 
