@@ -2,7 +2,7 @@
 let col = ["yellow", "blue", "orange", "brown", "green", "black"]
 let combos=[]
 let firstGuess = [1, 1, 2, 2]
-let nexGuess = []
+let nextGuess = ["yellow", "yellow", "blue", "blue"]
 let simGuesses = []
 let average =[]
 let averageCalc = 0
@@ -15,11 +15,7 @@ let white = 0
 let guessCount = 0
 let inputs = 0
 
-function getColor() {
-    const inputValue = document.getElementById("inputColor").value
-    let colors = getColor.split(',').map(num => num.trim())
-    col = col.concat(colors)
-    nextGuess = [col[0], col[0], col[1], col[1]]
+
     
     for(let x of col){
         for(let y of col){
@@ -33,14 +29,9 @@ function getColor() {
             }
         }
     } 
-    console.log(combos.length)
-    console.log(col)
-    console.log("hi")
-
-}
-
+  
  
-
+console.log(combos.length)
 
 
 
@@ -229,6 +220,7 @@ function getNumber2() {
 
 function woopGuess() {
     guessCount+=1
+    console.log(nextGuess)
     if (guessCount > 1) {
         inputs = document.querySelectorAll('input')
         black = +getNumber1()
